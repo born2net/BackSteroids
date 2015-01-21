@@ -2,7 +2,7 @@
 A Backbone powered mobile app boilerplate driven by AppGyver's Steroids framework
 
 
-With BackSteroids you get a solid solution for an entire mobile App that’s powered by AppGyver’s Steroids framework and the world’s most popular JavaScript library, Backbone (hence BackSteroids).
+With BackSteroids you get a solid application architecture for a mobile App that’s powered by AppGyver’s Steroids framework and the world’s most popular JavaScript library, Backbone (hence BackSteroids).
 AppGyver’s Steroids framework is built on top of the very popular open source Apache Cordova frame work which allows anyone to build a professional, cross OS mobile App (iOS, Android, Windows phone etc..)  using CSS, HTML and JavaScript.
 AppGyver’s add a layer of Native UIs so you get awesome native performance and none of that HTML choppiness.
 
@@ -38,7 +38,7 @@ BackSteroids is a collection of libraries (I guess you can consider it a framewo
 To use the project simply use the Steroids command to create a new project:
 
 <pre>
-steroids create [PROJECT_NAME]
+steroids create [YOUR_PROJECT_NAME]
 </pre>
 
 Once created, override the entire project with the content of this BackSteroids.
