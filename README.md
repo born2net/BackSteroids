@@ -13,10 +13,15 @@ And so BackSteroids was born.
 Benefits:
 ------------------------------------------------------------------------
 
+Note: a View is a separate DOM, essentially a new page.
+In a single Mobile App you will most likely have multiple Views.
+Since Views are separate pages (think separate Tabs in a browser), we need a way to handle communication and data synchronization of models between Views.
+
 BackSteroids is a collection of libraries (I guess you can consider it a framework) that delivers on the following patterns:
+
 -	A global setup.js that is shared among all Views (Single change propagates to all Views)
 -	Elements (HTML IDs) definition file per View
--	Uses require.js and some trickery to load only the modules needed per View and reuse the same init.js for the entire application (View being a separate DOM, and you will most likely have multiple views in a single Mobile App)
+-	Uses require.js and some trickery to load only the modules needed per View and reuse the same init.js for the entire application
 -	GPU powered smooth transition within a View (Fade / Slide) via StackView
 -	Stickit MVVM two way model / view binding
 -	A communication channel with set members
