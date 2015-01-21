@@ -6,7 +6,7 @@ AppGyver’s Steroids adds a layer of Native UIs so you get awesome native perfo
 
 While AppGyver developed some application structure on top of Angular, I believe Angular is a move in the wrong direction as it mixes business logic and presentation, extremely slow (even more so on mobile) and does way way way (waaaaay) too much “magic” (good luck debugging google’s code).
 
-Backbone on the other hand is un-opinionated, has thousands of plugins to choose from and it so happens to be the world's most popular JavaScript app library!
+Backbone on the other hand is un-opinionated, has thousands of plugins to choose from and it just so happens to be the world's most popular JavaScript app library!
 <b>And so BackSteroids was born.</b>
 
 
