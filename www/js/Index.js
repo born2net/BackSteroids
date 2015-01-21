@@ -1,17 +1,16 @@
 /**
- App MediaSignage Inc (c) open source digital signage project.
- Visit Github for license and docs: http://git.digitalsignage.com
+ BackSteroids, License MIT
+ Visit Github https://github.com/born2net/BackSteroids
  @class App
  @constructor
  @return {Object} instantiated App
  **/
-define(['Setup', 'LocalCollection', 'AuthCollection', 'Elems', 'StackView'], function (Setup, LocalCollection, AuthCollection, Elems, StackView) {
+define(['Setup', 'LocalCollection', 'AuthCollection', 'Elems', 'StackView', 'NoteModel'], function (Setup, LocalCollection, AuthCollection, Elems, StackView, NoteModel) {
     var App = Backbone.Controller.extend({
         initialize: function () {
             var self = this;
             log('======================================');
             window.BB.Elements = new Elems();
-
             // localization
             require(['LanguageSelectorView'], function (LanguageSelectorView) {
                 new LanguageSelectorView({el: BB.Elements.LANGUAGE_SELECTOR});
@@ -41,12 +40,8 @@ define(['Setup', 'LocalCollection', 'AuthCollection', 'Elems', 'StackView'], fun
         _initModelsCollection: function() {
             var self = this, note
 
-            var Note = Backbone.Model.extend({
-                urlRoot: 'https://secure.digitalsignage.com:443/GetDateTime'
-            });
-
             self.myNotes1 = new AuthCollection([], {locationUrl: '/cat'});
-            var note = new Note();
+            var note = new NoteModel();
             self.myNotes1.add(note);
             note.save();
             self.myNotes1.fetch();

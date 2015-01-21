@@ -4,7 +4,7 @@
  @constructor
  @return {Object} instantiated CommPageView
  **/
-define(['jquery', 'backbone', 'PageView', 'AuthCollection'], function ($, Backbone, PageView, AuthCollection) {
+define(['jquery', 'backbone', 'PageView', 'AuthCollection', 'NoteModel'], function ($, Backbone, PageView, AuthCollection, NoteModel) {
 
     var CommPageView = PageView.extend({
 
@@ -13,12 +13,8 @@ define(['jquery', 'backbone', 'PageView', 'AuthCollection'], function ($, Backbo
 
             self._listenSendPong();
 
-            var Note = Backbone.Model.extend({
-                urlRoot: 'https://secure.digitalsignage.com:443/GetDateTime'
-            });
-
             self.myNotes1 = new AuthCollection([], {locationUrl: '/cat'});
-            var note = new Note();
+            var note = new NoteModel();
             self.myNotes1.add(note);
             note.save();
             self.myNotes1.fetch();

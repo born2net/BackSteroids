@@ -27,6 +27,7 @@ require.config({
         'CommPageElems': 'elements/CommPageElems',
         'DrawerElems': 'elements/DrawerElems',
         'SettingsElems': 'elements/SettingsElems',
+        'NoteModel' : 'models/NoteModel',
         'LocalCollection': 'collections/LocalCollection',
         'AuthCollection': 'collections/AuthCollection',
         'Setup': 'setup',
