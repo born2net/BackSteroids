@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Drawer</title>
+    <link rel="stylesheet" href="http://localhost/components/supersonic/css/supersonic.css">
+    <link rel="stylesheet" href="http://localhost/stylesheets/application.css">
+    <link rel="import" href="http://localhost/components/supersonic/components/import.html">
+    <script src="http://localhost/cordova.js"></script>
+    <script src="http://localhost/components/steroids-js/steroids.js"></script>
+    <script src="http://localhost/components/angular/angular.js"></script>
+    <script src="http://localhost/components/supersonic/supersonic.js"></script>
+    <script src="http://localhost/components/webcomponentsjs/webcomponents.js"></script>
+    <script src="../js/common/catchall/catchall.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        window.webViewer = 'Drawer';
+    </script>
+    <script data-main="/init" src="../js/common/requirejs/require.js" type="text/javascript"></script>
+</head>
+<body>
+
+<div class="padding">
+    <h3>Drawer</h3>
+    <a id="drawerClose" class="button button-icon icon super-close-circled"></a>
+    <hr/>
+    <p>mvvm 2-way data binding</p>
+    <div style="clear: both">
+
+    </div>
+    <div class="list">
+        <label class="item item-input">
+            <input id="pass1" type="text" placeholder="password1">
+        </label>
+        <label class="item item-input">
+            <input id="pass2" type="text" placeholder="password2">
+        </label>
+    </div>
+
+</div>
+</body>
+</html>

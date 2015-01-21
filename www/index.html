@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <title>My Steroids App</title>
+
+    <link rel="stylesheet" href="/components/supersonic/css/supersonic.css">
+    <link rel="stylesheet" href="/stylesheets/application.css">
+    <link rel="import" href="/components/supersonic/components/import.html">
+
+    <script src="http://localhost/cordova.js"></script>
+    <script src="/components/steroids-js/steroids.js"></script>
+    <script src="/components/angular/angular.js"></script>
+    <script src="/components/supersonic/supersonic.js"></script>
+    <script src="/components/webcomponentsjs/webcomponents.js"></script>
+    <script src="js/common/catchall/catchall.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        window.webViewer = 'Index';
+    </script>
+    <script data-main="/init" src="js/common/requirejs/require.js" type="text/javascript"></script>
+    <script src="/scripts/application.js"></script>
+
+</head>
+<body ng-app="SteroidsApplication">
+
+<div class="padding" ng-controller="IndexController">
+
+    <!--
+    <super-navbar-title ng-bind="navbarTitle">
+    </super-navbar-title>
+    -->
+
+    <super-navbar>
+        <super-navbar-title id="navBarTitle">
+            Welcome to BackRoids
+        </super-navbar-title>
+    </super-navbar>
+
+    <div id="languageSelector" class="list">
+        <label class="item item-input item-select">
+            <div class="input-label">
+                Select language
+            </div>
+            <select>
+                <option value="he">Hebrew</option>
+                <option value="en" selected>English</option>
+            </select>
+        </label>
+    </div>
+
+    <button id="toToAnimPage" data-localize="toToAnimPage" class="button button-full button-positive">
+        Go to Animation page
+    </button>
+
+    <button id="getServerTime" data-localize="getServerTime" class="button button-full button-positive">
+        Get Server Time
+    </button>
+
+    <div class="card padding">
+        <label class="item item-input">
+            <input id="field1" placeholder="cat model" type="text">
+        </label>
+    </div>
+
+    <button id="saveToServer" class="button button-full button-positive">
+        Save Cat model to server
+    </button>
+
+    <hr/>
+
+    <div class="card padding">
+        <label class="item item-input">
+            <input id="field2" placeholder="dog model" type="text">
+        </label>
+    </div>
+
+    <div class="card padding">
+        <label class="item item-input">
+            <input id="field3" placeholder="lion model" type="text">
+        </label>
+    </div>
+
+    <button id="goToCommPage" class="button button-full button-positive">
+        Go to Comm page
+    </button>
+
+    <hr/>
+
+    <button id="sendPing" class="button button-full button-positive">
+        Send Ping
+    </button>
+
+    <small>version 0.85 | http://www.JavaScriptNinja.io</small>
+</div>
+<p style="display: none" id="navBarTitleLocal" data-localize="navBarTitleLocal">Welcome to BackRoids 0</p>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Settings</title>
+    <link rel="stylesheet" href="/components/supersonic/css/supersonic.css">
+    <link rel="stylesheet" href="/stylesheets/application.css">
+    <link rel="import" href="/components/supersonic/components/import.html">
+    <script src="http://localhost/cordova.js"></script>
+    <script src="/components/steroids-js/steroids.js"></script>
+    <script src="/components/angular/angular.js"></script>
+    <script src="/components/supersonic/supersonic.js"></script>
+    <script src="/components/webcomponentsjs/webcomponents.js"></script>
+    <script src="../js/common/catchall/catchall.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        window.webViewer = 'Settings';
+    </script>
+    <script data-main="/init" src="../js/common/requirejs/require.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="padding">
+    <ul class="list">
+        <li class="item item-checkbox">
+            <label class="checkbox">
+                <input type="checkbox">
+            </label>
+           Flip me
+        </li>
+    </ul>
+    <div class="range">
+        <i class="icon super-volume-low"></i>
+        <input type="range" name="volume">
+        <i class="icon super-volume-high"></i>
+    </div>
+    <div class="list">
+        <div class="item range range-positive">
+            <i class="icon super-ios7-sunny-outline"></i>
+            <input type="range" name="volume" min="0" max="100" value="33">
+            <i class="icon super-ios7-sunny"></i>
+        </div>
+    </div>
+    <ul class="list">
+        <li class="item item-toggle">
+            Show / Hide App Tabs
+            <label class="toggle toggle-assertive">
+                <input id="toggleTabs" type="checkbox">
+                <div class="track">
+                    <div class="handle"></div>
+                </div>
+            </label>
+        </li>
+    </ul>
+
+    <button id="openModelView" class="button button-full button-positive">
+        Open a modal dialog
+    </button>
+
+</div>
+</body>
+</html>
