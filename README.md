@@ -30,7 +30,7 @@ To use the project simply use the Steroids command to create a new project:
 
 <pre>
 steroids create [PROJECT_NAME]
-<pre>
+</pre>
 
 Once created, override the entire project with the content of this BackSteroids.
 Note that you will still use your config.json for your unique application id.
