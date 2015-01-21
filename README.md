@@ -7,6 +7,7 @@ AppGyver’s Steroids adds a layer of Native UIs so you get awesome native perfo
 While AppGyver developed some application structure on top of Angular, I believe Angular is a move in the wrong direction as it mixes business logic and presentation, extremely slow (even more so on mobile) and does way way way (waaaaay) too much “magic” (good luck debugging google’s code).
 
 Backbone on the other hand is un-opinionated, has thousands of plugins to choose from and it just so happens to be the world's most popular JavaScript app library!
+
 <b>And so BackSteroids was born.</b>
 
 
@@ -22,13 +23,13 @@ BackSteroids is a collection of libraries (I guess you can consider it a framewo
 -	A global setup.js that is shared among all Views (Single change propagates to all Views)
 -	Elements (HTML IDs) definition file per View
 -	Uses require.js and some trickery to load only the modules needed per View and reuse the same init.js for the entire application
--	GPU powered smooth transition within a View (Fade / Slide) via StackView
+-	GPU powered smooth transition within a View (Fade / Slide) powered by StackView
 -	Stickit MVVM two way model / view binding
 -	A communication channel with set members
 -	Support for Localization (dynamic multi language)
--	Support CORS server commands via Pre-flight checks (on node.js)
+-	Support CORS server commands via Pre-flight checks, required for server communication (node.js)
 -	Uses a commBroker as a moderator and service provider within a View
--	Use a commBroker as a moderate for event communication between Views
+-	Uses a commBroker as a moderator for event communication between Views
 -	Ability to share models in different Views (through LocalStore)
 -	Ability to save the same LocalStore models to the server
 -	General utilities such as log, jlog, global error catch for debugging etc…
