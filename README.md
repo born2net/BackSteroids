@@ -10,7 +10,7 @@ While AppGyver developed some application structure on top of Angular, I believe
 And so BackSteroids was born.
 
 
-Why BackSteroids?
+Benefits:
 ------------------------------------------------------------------------
 
 BackSteroids is a collection of libraries (I guess you can consider it a framework) that delivers on the following patterns:
@@ -39,7 +39,8 @@ steroids create [PROJECT_NAME]
 Once created, override the entire project with the content of this BackSteroids.
 Note that you will still use your config.json for your unique application id.
 
-
+Screencast
+------------------------------------------------------------------------
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=YOUTUBE_VIDEO_ID_HERE
 " target="_blank"><img src="http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg"
