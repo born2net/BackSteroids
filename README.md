@@ -1,5 +1,5 @@
 # BackSteroids
-Backbone powered mobile app boilerplate driven by AppGyver's Steroids framework
+A Backbone powered mobile app boilerplate driven by AppGyver's Steroids framework
 
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=YOUTUBE_VIDEO_ID_HERE
