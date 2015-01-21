@@ -28,9 +28,6 @@ define(['Setup', 'LocalCollection', 'AuthCollection', 'Elems', 'StackView', 'Not
             $(BB.Elements.GO_TO_ANIM_PAGE).on('click', function (e) {
                 supersonic.ui.layers.push(self.m_coolAnimView.getPageView());
             });
-
-
-
         },
 
         /**
@@ -145,10 +142,6 @@ define(['Setup', 'LocalCollection', 'AuthCollection', 'Elems', 'StackView', 'Not
                     location: "/pages/CommPage.html",
                     pageID: "CommPage"
                 });
-
-
-
-
 
                 // self.m_stackView = new StackView.Fader({duration: 1});
 
