@@ -9,6 +9,10 @@ AppGyver’s add a layer of Native UIs so you get awesome native performance and
 While AppGyver developed some application structure on top of Angular, I believe Angular is a move in the wrong direction as it mixes business logic and presentation, extremely slow (even more so on mobile) and does way way way (waaaaay) too much “magic” (good luck debugging google’s code).
 And so BackSteroids was born.
 
+
+Why BackSteroids?
+------------------------------------------------------------------------
+
 BackSteroids is a collection of libraries (I guess you can consider it a framework) that delivers on the following patterns:
 -	A global setup.js that is shared among all Views (Single change propagates to all Views)
 -	Elements (HTML IDs) definition file per View
