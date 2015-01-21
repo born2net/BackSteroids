@@ -12,7 +12,15 @@ define(['jquery', 'backbone', 'PageView', 'AuthCollection', 'NoteModel'], functi
             var self = this;
 
             self._listenSendPong();
+            self._initModelsCollection();
+        },
 
+        /**
+         Create all the models and collections that we use to communicate with other pages and to server
+         @method _initModelsCollection
+         **/
+        _initModelsCollection: function() {
+            var self = this;
             self.myNotes1 = new AuthCollection([], {locationUrl: '/cat'});
             var note = new NoteModel();
             self.myNotes1.add(note);
