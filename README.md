@@ -33,8 +33,7 @@ BackSteroids is a collection of libraries (I guess you can consider it a framewo
 -	Ability to share models in different Views (through LocalStore)
 -	Ability to save the same LocalStore models to the server
 -	General utilities such as log, jlog, global error catch for debugging etc…
--	Application structure with focus on OOP (privates remain _private)
--	Application architecture based on separation of concern and pure OOP
+-	Application architecture based on separation of concerns and pure OOP
 
 To use the project simply use the Steroids command to create a new project:
 
