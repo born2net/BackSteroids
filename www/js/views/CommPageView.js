@@ -10,7 +10,6 @@ define(['jquery', 'backbone', 'PageView', 'AuthCollection', 'NoteModel'], functi
 
         _initialize: function () {
             var self = this;
-
             self._listenSendPong();
             self._initModelsCollection();
         },
