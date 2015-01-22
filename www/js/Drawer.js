@@ -8,7 +8,11 @@ define(['jquery', 'backbone', 'PageView', 'Setup', 'DrawerElems', 'backbone.stic
 
     var Drawer = PageView.extend({
 
-        _initialize: function () {
+        /**
+         Initialize PageView
+         @method initialize
+         **/
+        initialize: function () {
             var self = this;
             self.$el = $('body');
 

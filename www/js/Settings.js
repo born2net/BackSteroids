@@ -9,9 +9,9 @@ define(['PageView', 'Setup', 'SettingsElems'], function (PageView, Setup, Settin
     var SettingsView = PageView.extend({
 
         /**
-         @method _initialize
+         Initialize PageView
          **/
-        _initialize: function () {
+        initialize: function () {
             var self = this;
             window.BB.Elements = new SettingsElems();
             self._listenToggleTabs();
