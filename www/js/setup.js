@@ -1,10 +1,10 @@
 /**
- Setup globals 0er App / html page
+ Setup globals per App view
  @class Setup
  @constructor
  @return {Object} instantiated Setup
  **/
-define(['underscore', 'jquery', 'backbone', 'backbone.controller', 'Setup', 'ComBroker', 'Lib'], function (_, $, Backbone, backbonecontroller, Setup, ComBroker, Lib) {
+define(['underscore', 'jquery', 'backbone', 'backbone.controller', 'ComBroker', 'Lib'], function (_, $, Backbone, backbonecontroller, ComBroker, Lib) {
 
     window.BB = Backbone;
     window.lang = 'en';

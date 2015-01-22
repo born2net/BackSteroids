@@ -16,7 +16,7 @@ define(['Setup', 'CoolAnimElems'], function (Setup, CoolAnimElems) {
                     active: true,
                     el: 'body',
                     location: "/pages/CoolAnimPage.html",
-                    pageID: "LineList"
+                    pageID: "CoolAnim"
                 });
             });
         }

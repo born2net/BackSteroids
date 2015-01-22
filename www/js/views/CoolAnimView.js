@@ -129,7 +129,7 @@ define(['jquery', 'backbone', 'PageView', 'CSSPlugin', 'TweenMax', 'StackView'],
              BB.comBroker.setService(BB.SERVICES.CAMPAIGN_SELECTOR, self.m_campaignSelectorView);
              supersonic.ui.tabs.updateCurrentTab({title: "aaaa"});
 
-             supersonic.ui.views.find("LineList").then(function (view) {
+             supersonic.ui.views.find("CommPage").then(function (view) {
              supersonic.logger.log("view location: " + view.getLocation());
              supersonic.ui.layers.push(view);
              //supersonic.ui.modal.show(view);

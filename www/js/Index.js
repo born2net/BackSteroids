@@ -134,7 +134,7 @@ define(['Setup', 'LocalCollection', 'AuthCollection', 'Elems', 'StackView', 'Not
                 self.m_coolAnimView = new CoolAnimView({
                     active: false,
                     location: "/pages/CoolAnimPage.html",
-                    pageID: "LineList"
+                    pageID: "CoolAnim"
                 });
 
                 self.m_commPageView = new CommPageView({
