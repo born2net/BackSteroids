@@ -131,17 +131,20 @@ define(['Setup', 'LocalCollection', 'AuthCollection', 'Elems', 'StackView', 'Not
             var self = this;
             require(['StackView', 'CoolAnimView', 'CommPageView'], function (StackView, CoolAnimView, CommPageView) {
 
+
                 self.m_coolAnimView = new CoolAnimView({
-                    active: false,
-                    location: "/pages/CoolAnimPage.html",
-                    pageID: "CoolAnim"
-                });
+                    init: false
+                }).initializePage();
 
                 self.m_commPageView = new CommPageView({
-                    active: false,
-                    location: "/pages/CommPage.html",
-                    pageID: "CommPage"
-                });
+                    init: false
+                }).initializePage();
+
+                //self.m_coolAnimView = (new CoolAnimView({init: false}));
+                //self.m_coolAnimView.initializePage();
+
+                // self.m_commPageView = new CommPageView({init: false});
+                // self.m_commPageView.initializePage();
 
                 // self.m_stackView = new StackView.Fader({duration: 1});
 

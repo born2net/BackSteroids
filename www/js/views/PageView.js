@@ -9,32 +9,26 @@ define(['jquery', 'backbone'], function ($, Backbone) {
     var PageView = Backbone.View.extend({
 
         /**
-         Constructor
-         @method initialize
+         Create the Steroids page / view identity
+         @method initializePage
          **/
-        initialize: function () {
+        initializePage: function () {
             var self = this;
-            if (!_.isUndefined(self.options)){
-                self.m_page = new supersonic.ui.View({
-                    location: self.options.location,
-                    id: self.options.pageID
-                });
-                self.m_page.start();
-                if (self.options.active == true) {
-                    self._initialize();
-                }
-            } else {
-                self._initialize();
-            }
+            self.m_page = new supersonic.ui.View({
+                location: self.location,
+                id: self.pageID
+            });
+            self.m_page.start();
+            if (self.options && self.options.init == false)
+                return self;
+            self._initialize();
+            return self;
         },
 
         /**
-         Override method in sub-class
-         @method _initialize
+         Get page / view instance
+         @method getPageView
          **/
-        _initialize: function () {
-        },
-
         getPageView: function () {
             var self = this;
             return self.m_page;

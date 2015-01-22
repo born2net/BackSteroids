@@ -8,6 +8,13 @@ define(['jquery', 'backbone', 'PageView', 'AuthCollection', 'NoteModel'], functi
 
     var CommPageView = PageView.extend({
 
+        location: "/pages/CommPage.html",
+        pageID: "CommPage",
+
+        /**
+         Init called from PageView base class
+         @method _initialize
+         **/
         _initialize: function () {
             var self = this;
             self._listenSendPong();

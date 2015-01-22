@@ -6,10 +6,15 @@
  **/
 define(['jquery', 'backbone', 'PageView', 'CSSPlugin', 'TweenMax', 'StackView'], function ($, Backbone, PageView, CSSPlugin, TweenMax, StackView) {
 
-    BB.SERVICES.LINE_LIST_VIEW = 'LINE_LIST_VIEW';
-
     var CoolAnimView = PageView.extend({
 
+        location: "/pages/CoolAnimPage.html",
+        pageID: "CoolAnim",
+
+        /**
+         Init called from PageView base class
+         @method _initialize
+         **/
         _initialize: function () {
             var self = this;
             self.m_slideIndex = 1;

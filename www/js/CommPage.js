@@ -13,11 +13,8 @@ define(['Setup', 'CommPageElems'], function (Setup, CommPageElems) {
             require(['StackView', 'CommPageView'], function (StackView, CommPageView) {
 
                 self.m_coolAnimView = new CommPageView({
-                    active: true,
-                    el: 'body',
-                    location: "/pages/CommPagePage.html",
-                    pageID: "CommPagePage"
-                });
+                    el: 'body'
+                }).initializePage();
             });
         }
     });
