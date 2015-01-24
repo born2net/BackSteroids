@@ -35,13 +35,13 @@ tab-bar tab-bar-item:selected {
 }
 
 tab-bar-item#settings {
-  background-image: url(icons/cog.svg);
+  background-image: url(assets/cog.svg);
 }
 
 tab-bar-item#index {
-  background-image: url(icons/home.svg);
+  background-image: url(assets/home.svg);
 }
 
 tab-bar-item#internet {
-  background-image: url(icons/search.svg);
+  background-image: url(assets/search.svg);
 }
