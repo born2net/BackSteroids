@@ -10,7 +10,6 @@ require.config({
         'backbone': 'common/backbone/backbone',
         'text': 'common/requirejs/text',
         'underscore': 'common/underscore/underscore',
-        'text': 'common/requirejs/text',
         'backbone.controller': 'common/backbone-controller/backbone.controller',
         'backbone.localstorage': 'common/backbone-localstorage/backbone.dualstorage.amd',
         'backbone.stickit': 'common/backbone-stickit/backbone.stickit',
