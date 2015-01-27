@@ -10,7 +10,7 @@ Backbone on the other hand is un-opinionated, has thousands of plugins to choose
 
 <b>And so BackSteroids was born.</b>
 
-current version: 0.82
+current version: 0.84
 
 Benefits:
 ------------------------------------------------------------------------
